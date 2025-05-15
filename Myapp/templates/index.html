@@ -1,4 +1,13 @@
 {% extends 'base.html' %}
 {% block body_block %}
-<h1>Home</h1>
+<h1>Todo App</h1>
+
+{% for i in  tasks %}
+<p>task : {{ i.task }}</p>
+<p>note</p>
+<p>complete</p>
+<p>created _at</p>
+<p>updated_at</p>
+{% endfor %}
+
 {% endblock %}
